@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>Conversor de temperaturas</title>
+		<script src="funcTemp.js"></script>
+    </head>
+    
+    <body>
+		<h1>Convertir temperatura a otra unidad</h1>
+		<h3>Ingresar temperatura:</h3>
+		<input id="entrada" onkeyup="calcular()" autofocus>
+		<select id="temp1">
+			<option value="C" onclick="calcular()" selected>°C (grados Celsius)</option>
+			<option value="F" onclick="calcular()">°F (grados Fahrenheit)</option>
+			<option value="K" onclick="calcular()">K (Kelvin)</option>
+			<option value="R" onclick="calcular()">R (Rankine)</option>
+		</select>
+
+		<hr>
+		
+		<input id="res" readonly>
+		<select id="temp2">
+			<option value="C" onclick="calcular()">°C (grados Celsius)</option>
+			<option value="F" onclick="calcular()" selected>°F (grados Fahrenheit)</option>
+			<option value="K" onclick="calcular()">K (Kelvin)</option>
+			<option value="R" onclick="calcular()">R (Rankine)</option>
+		</select>
+		<button onclick="voltear()">Usar como entrada</button>
+		
+		<script>calcular();</script>
+	</body>
+</html>

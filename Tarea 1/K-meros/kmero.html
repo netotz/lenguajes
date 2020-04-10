@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>K-meros más frecuentes</title>
+		<style>
+			#kmeroslist{
+				display: none;
+				font-size: 16px;
+			}
+			#kmerosfrec{
+				display: none;
+				font-size: 16px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<center><h1>K-meros más frecuentes</h1></center>
+		Introducir número binario, máximo 20 caracteres<br>
+		<input id="string" size="20" maxlength="20" autofocus> <button onclick="validar()">Ingresar string</button>
+		<br>
+		<textarea id="kmeroslist" readonly></textarea>
+		<br>
+		<h2 id="txt"></h2>
+		<textarea id="kmerosfrec" readonly></textarea>
+		<script src="kmero.js"></script>
+	</body>
+</html>

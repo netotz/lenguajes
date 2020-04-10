@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mínimo común múltiplo</title>
+		<style>
+			.div2{
+				display: none;
+			}
+			#boton{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<center><h1>Calculadora de mínimo común múltiplo (mcm)</h1></center>
+		<div id="inputcant">
+			Cantidad de números a ingresar: <input id="cantidad" autofocus> <button onclick="leerCantidad()">Aceptar</button>
+		</div>
+		<div class="div2" id="agregar">
+			Agregar número entero positivo: <input id="num" autofocus> <button onclick="agregarNum()">Agregar</button> <br>
+		</div>
+		<div class="div2" id="result">
+			<b>mcm(</b><span id="numeros"></span><b>) = <span id="mcm"></span></b>
+		</div>
+		<div id="boton">
+			<br> <button onclick="reinicio()">Ingresar nuevos elementos</button>
+		</div>
+		
+		<script src="mcm-script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="matrices.js"></script>
+		<title>Matrices</title>
+		<style>
+			.split{
+				height: 50%;
+				position: fixed;
+				z-index: 1;
+				overflow-x: hidden;
+			}
+			.left{
+				width: 50%;
+				left: 0;
+				top: 1;
+			}
+			.right{
+				width: 50%;
+				right: 0;
+				top: 1;
+			}
+			.down{
+				width: 100%;
+				bottom: 0;
+			}
+			#matres{
+				display: none;
+				font-size: 20px;
+				font-family: Cambria;
+			}
+		</style>
+	</head>
+	<body>
+		<center><h1>Operaciones con matrices</h1></center>
+		<div id="izq" class="split left">
+			Matriz A: 
+			<button onclick="crear('izq',A,'A',0,'')">+columna</button><button onclick="crear('izq',A,'A',1,'')">+fila</button> 
+			<button onclick="borrar('izq',A,'A',0)">-columna</button><button onclick="borrar('izq',A,'A',1)">-fila</button><br>
+			<div id="Af1" class="filA"><input id="A11" name="celA" size="3"></div>
+		</div>
+		
+		<div id="der" class="split right">
+			Matriz B: 
+			<button onclick="crear('der',B,'B',0,'')">+columna</button><button onclick="crear('der',B,'B',1,'')">+fila</button> 
+			<button onclick="borrar('der',B,'B',0)">-columna</button><button onclick="borrar('der',B,'B',1)">-fila</button><br>
+			<div id="Bf1" class="filB"><input id="B11" name="celB" size="3"></div>
+		</div>
+		
+		<center>
+		<div id="res" class="split down">
+			<button onclick="suma()">Suma</button> <button onclick="producto()">Multiplicación</button> <br>
+			<p id="txt"></p>
+			<textarea id="matres" readonly></textarea>
+		</div>
+		</center>
+		
+		<script>
+			crear("izq",A,"A",0,"");
+			crear("izq",A,"A",1,"");
+			crear("der",B,"B",0,"");
+			crear("der",B,"B",1,"");
+		</script>
+		
+	</body>
+</html>

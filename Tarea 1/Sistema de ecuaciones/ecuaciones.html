@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="ecuaciones.js"></script>
+		<title>Sistema de ecuaciones lineales</title>
+		<style>
+			#result{
+				display: none;
+				font-size: 20px;
+				font-family: Cambria;
+			}
+		</style>
+	</head>
+	<body>
+		<center><h1>Resolución de sistema de ecuaciones por método Montante</h1></center>
+		<h3>Cada celda es el coeficiente de una variable, cada columna es una variable diferente; excepto la última, que es la igualdad de la ecuación.</h3>
+		<h4>Cinco ecuaciones como máximo</h4>
+		<div id="sis">
+			<button onclick="crear(1)">+variable</button>
+			<button onclick="borrar(1)">-variable</button><br>
+			<div id="f1" class="fila"><input name="celdas" size="3" maxlength="10"></div>
+		</div>
+		
+		<center>
+		<div id="area">
+			<button onclick="resolv()">Resolver sistema</button><br>
+			<textarea id="result" readonly></textarea>
+		</div>
+		</center>
+		
+		<script>
+			crear(0);
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,3 @@
+El proyecto de Scala se llama "ejemplo", sin  embargo sí es el programa del tiempo que ha vivido una persona.
+Se llama así debido a que fue creado para ir probando el lenguaje y al final ahí mismo se hizo programa porque crear un proyecto de Scala tarda entre 20 y 30 minutos.
+Proyecto creado con IntelliJ IDEA
